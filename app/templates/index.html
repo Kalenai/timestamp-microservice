@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timestamp Microservice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <h1>
+          Timestamp Microservice
+        </h1>
+        <h3>
+          What is this?
+        </h3>
+        <p>
+            A small API built on Flask, satisfying the requirements for FreeCodeCamp's Timestamp Microservice project (except in Python).
+            <br>
+            You can find the source code <a href="https://github.com/Kalenai/timestamp-microservice">here</a>.
+        </p>
+        <h3>
+          Project Specs
+        </h3>
+        <p>
+            <a href="https://www.freecodecamp.org/challenges/timestamp-microservice">https://www.freecodecamp.org/challenges/timestamp-microservice</a>
+            <br>
+            <a href="https://timestamp-ms.herokuapp.com/">https://timestamp-ms.herokuapp.com/</a>
+        </p>
+        <h5>
+          User stories
+        </h5>
+        <ol>
+          <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).</li>
+          <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+          <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+        </ol>
+        <h5>
+          Example usage
+        </h5>
+        <pre>
+          https://timestamp-ms.herokuapp.com/December%2015,%202015
+          https://timestamp-ms.herokuapp.com/1450137600
+        </pre>
+        <h5>
+          Example output
+        </h5>
+        <pre>
+          { "natural": "December 15, 2015",
+            "unix": 1450137600 }
+        </pre>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
