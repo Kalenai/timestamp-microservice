@@ -6,3 +6,5 @@ services:
      - "5000:5000"
     volumes:
      - .:/app
+    environment:
+      - APP_SETTINGS=app.config.DevelopmentConfig
